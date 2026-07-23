@@ -1,0 +1,15 @@
+{
+  "name": "supritha-portfolio",
+  "version": "1.0.0",
+  "description": "Premium Personal Portfolio Website for Supritha K A",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server -p 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "data-analyst"
+  ],
+  "author": "Supritha K A",
+  "license": "ISC"
+}

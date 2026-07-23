@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Supritha K A | Data Analyst Portfolio</title>
+  <meta name="description" content="Portfolio of Supritha K A - Data Analyst specialized in Python, SQL, Excel, and Data Visualization. Explore interactive dashboards, AI integrations, and certifications.">
+  <meta name="keywords" content="Data Analyst, Supritha K A, Python, SQL, Tableau, Power BI, Excel, Portfolio, Machine Learning, Devanahalli">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="index.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body data-theme="dark">
+
+  <!-- Custom Butterfly Cursor -->
+  <div id="butterfly-cursor" class="butterfly-cursor">
+    <div class="butterfly">
+      <div class="wing wing-left">
+        <div class="wing-inner"></div>
+      </div>
+      <div class="body-center"></div>
+      <div class="wing wing-right">
+        <div class="wing-inner"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Glassmorphism Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="nav-logo">
+        <span class="logo-accent">&lt;</span>Supritha<span class="logo-accent">.Data /&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle Theme">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+        <button id="admin-toggle" class="btn-icon" aria-label="Admin Login">
+          <i data-lucide="lock"></i>
+        </button>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content container">
+      <div class="hero-left reveal-fade-up">
+        <div class="badge glow-teal">Data Analytics Portfolio</div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Supritha K A</span>
+        </h1>
+        <h2 class="hero-subtitle">
+          <span id="typewriter"></span><span class="typewriter-cursor">|</span>
+        </h2>
+        <p class="hero-description">
+          Turning raw datasets into interactive visual narratives. Specializing in query optimization, dashboard engineering, and embedding AI solutions to unlock business potential.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary track-cta" data-cta="view_projects">
+            <span>View Projects</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="./resume.pdf" download="Supritha_KA_Resume.pdf" id="hero-download-resume" class="btn btn-outline track-cta" data-cta="download_resume">
+            <i data-lucide="download"></i>
+            <span>Download Resume</span>
+          </a>
+          <a href="#contact" class="btn btn-text track-cta" data-cta="contact_me">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-right reveal-fade-up">
+        <div class="hero-image-wrapper">
+          <div class="glowing-border"></div>
+          <div class="hero-data-card card-1">
+            <i data-lucide="database" class="teal"></i>
+            <div>
+              <span class="card-num" id="hero-stat-rows">10M+</span>
+              <span class="card-label">Rows Analyzed</span>
+            </div>
+          </div>
+          <div class="hero-data-card card-2">
+            <i data-lucide="pie-chart" class="violet"></i>
+            <div>
+              <span class="card-num" id="hero-stat-dash">15+</span>
+              <span class="card-label">Dashboards Built</span>
+            </div>
+          </div>
+          <img src="profile1.jpg" alt="Supritha K A" class="hero-profile-image">
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll Down">
+      <div class="mouse-icon">
+        <div class="wheel"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title text-center reveal-fade-up">About Me</h2>
+      <div class="about-grid">
+        <div class="about-image-column reveal-fade-up">
+          <div class="portrait-card">
+            <img src="profile.png" alt="Supritha K A portrait" class="about-portrait">
+            <div class="portrait-glow"></div>
+          </div>
+        </div>
+        <div class="about-text-column reveal-fade-up">
+          <h3 id="about-heading-role">Information Science Engineer & Analyst</h3>
+          <p class="about-p">
+            I am a student of **Information Science & Engineering** based in Devanahalli, India, combining rigorous technical programming with a deep passion for data architecture. I love discovering the stories hidden inside complex datasets and presenting them as beautiful, logical, and interactive dashboards.
+          </p>
+          <p class="about-p">
+            My experience bridges backend scripting and querying (Python, SQL) with advanced analysis and modern full-stack capabilities. I focus on optimizing query performances, creating KPI indicators, and testing predictive models to deliver high-quality data products.
+          </p>
+          <div class="fact-grid">
+            <div class="fact-item">
+              <i data-lucide="map-pin"></i>
+              <div>
+                <h4>Location</h4>
+                <p id="about-info-loc">Devanahalli, India</p>
+              </div>
+            </div>
+            <div class="fact-item">
+              <i data-lucide="mail"></i>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:suprithasupritha869@gmail.com" id="about-info-email">suprithasupritha869@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="fact-item">
+              <i data-lucide="phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p id="about-info-phone">+91 8660520114</p>
+              </div>
+            </div>
+            <div class="fact-item">
+              <i data-lucide="graduation-cap"></i>
+              <div>
+                <h4>Education</h4>
+                <p>Information Science & Engineering Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <h2 class="section-title text-center reveal-fade-up">Professional Journey</h2>
+      <p class="section-subtitle text-center reveal-fade-up">My internships and research engagements</p>
+      
+      <div class="timeline">
+        <!-- Item 1: CodSoft -->
+        <div class="timeline-item reveal-fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Oct 2025 – Nov 2025</span>
+            <h3 class="timeline-role">AI Intern</h3>
+            <h4 class="timeline-company">CodSoft</h4>
+            <p class="timeline-desc">
+              Pioneered smart integrations by deploying AI and Machine Learning capabilities across core applications.
+            </p>
+            <ul class="timeline-bullets">
+              <li>Integrated AI features across 3+ product modules to boost performance and automate workflows.</li>
+              <li>Benchmarked 4+ state-of-the-art AI techniques against proprietary project datasets to optimize accuracy.</li>
+              <li>Wrote Python automation modules and clean SQL schemas to streamline dataset preprocessing pipelines.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Item 2: Henry Harvin -->
+        <div class="timeline-item reveal-fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Internship</span>
+            <h3 class="timeline-role">Power BI Data Analyst Intern</h3>
+            <h4 class="timeline-company">Henry Harvin</h4>
+            <p class="timeline-desc">
+              Focusing on professional business intelligence solutions and enterprise dashboard modeling.
+            </p>
+            <ul class="timeline-bullets">
+              <li>Designed and connected complex relational schemas in Power BI to consolidate multi-department sources.</li>
+              <li>Engineered interactive DAX formulas to display real-time business KPIs and sales trends.</li>
+              <li>Conducted exploratory data analysis (EDA) and data cleansing on raw customer databases.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Item 3: ISRO -->
+        <div class="timeline-item reveal-fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Research Project</span>
+            <h3 class="timeline-role">AI/ML for Geodata Analysis</h3>
+            <h4 class="timeline-company">ISRO (Indian Space Research Organisation)</h4>
+            <p class="timeline-desc">
+              Engaged in high-impact geospatial analytics and predictive geodata research.
+            </p>
+            <ul class="timeline-bullets">
+              <li>Applied advanced machine learning models on satellite image datasets and environmental geodata.</li>
+              <li>Created clean scripts to filter coordinate metrics and generate geographic visualization layers.</li>
+              <li>Analyzed climate and spatial datasets using Python library pipelines (Pandas, NumPy, Geopandas).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <h2 class="section-title text-center reveal-fade-up">Technical Expertise</h2>
+      <p class="section-subtitle text-center reveal-fade-up">Tools and methodologies I leverage to extract insights</p>
+      
+      <div class="skills-wrapper">
+        <div class="skills-tabs reveal-fade-up">
+          <button class="tab-btn active" data-tab="viz">Data Analysis & Viz</button>
+          <button class="tab-btn" data-tab="prog">Programming & Tools</button>
+          <button class="tab-btn" data-tab="ai">AI & Analytics</button>
+        </div>
+        
+        <div class="skills-container reveal-fade-up">
+          <!-- Data Analysis & Viz -->
+          <div class="skills-content active" id="tab-viz">
+            <div class="skills-grid">
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>SQL (Query Optimization, Joins, Aggregations)</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress glow-teal" data-width="95%"></div></div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>Python Data Libraries (Pandas, NumPy)</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress glow-teal" data-width="90%"></div></div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>Tableau & Power BI Basics</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress glow-teal" data-width="85%"></div></div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>Excel (VLOOKUP, Pivot Tables, Power Query)</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress glow-teal" data-width="95%"></div></div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>Data Visualization (Matplotlib, Seaborn)</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress glow-teal" data-width="88%"></div></div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>Data Cleaning & Preprocessing</span>
+                  <span>92%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress glow-teal" data-width="92%"></div></div>
+              </div>
+            </div>
+            <div class="skill-tags mt-4">
+              <span class="skill-tag">Statistical Analysis</span>
+              <span class="skill-tag">Dashboard Development</span>
+              <span class="skill-tag">KPI Reporting</span>
+              <span class="skill-tag">Ad-hoc Querying</span>
+            </div>
+          </div>
+          
+          <!-- Programming & Tools -->
+          <div class="skills-content" id="tab-prog">
+            <div class="skills-grid">
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>Python Core</span>
+                  <span>92%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress glow-violet" data-width="92%"></div></div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>Relational Databases (MySQL, PostgreSQL)</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress glow-violet" data-width="88%"></div></div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>OOP (Object Oriented Programming)</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress glow-violet" data-width="85%"></div></div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>Git & Version Control</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress glow-violet" data-width="80%"></div></div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>Full Stack Development (HTML, CSS, JS)</span>
+                  <span>78%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress glow-violet" data-width="78%"></div></div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>Web Development Frameworks</span>
+                  <span>75%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress glow-violet" data-width="75%"></div></div>
+              </div>
+            </div>
+            <div class="skill-tags mt-4">
+              <span class="skill-tag">Command Line</span>
+              <span class="skill-tag">GitHub Workflow</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">JSON Parsing</span>
+            </div>
+          </div>
+          
+          <!-- AI & Analytics -->
+          <div class="skills-content" id="tab-ai">
+            <div class="skills-grid">
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>AI/ML Fundamentals</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress glow-amber" data-width="80%"></div></div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>Model Evaluation (ROC-AUC, F1, Confusion Matrix)</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress glow-amber" data-width="85%"></div></div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>Natural Language Processing (NLP)</span>
+                  <span>75%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress glow-amber" data-width="75%"></div></div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>A/B Testing & Hypothesis Testing</span>
+                  <span>70%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress glow-amber" data-width="70%"></div></div>
+              </div>
+            </div>
+            <div class="skill-tags mt-4">
+              <span class="skill-tag">Predictive Analytics</span>
+              <span class="skill-tag">Geodata Analysis</span>
+              <span class="skill-tag">AI Prompt Engineering</span>
+              <span class="skill-tag">Feature Engineering</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <h2 class="section-title text-center reveal-fade-up">Featured Projects</h2>
+      <p class="section-subtitle text-center reveal-fade-up">Data applications and storytelling dashboards</p>
+      
+      <div class="projects-grid">
+        <!-- Project 1: Data Storytelling Dashboard -->
+        <div class="project-card reveal-fade-up track-project" data-project="storytelling_dashboard">
+          <div class="project-card-header">
+            <div class="project-category">Data Storytelling & Visualization</div>
+            <h3 class="project-title">Data Storytelling Dashboard</h3>
+          </div>
+          <div class="project-card-body">
+            <p>Interactive web application showing critical visual patterns from raw datasets, mapping insights with interactive controls and performance metrics.</p>
+            <div class="project-metrics">
+              <div class="metric-badge">
+                <span class="val">98%</span>
+                <span class="lbl">Query Speed</span>
+              </div>
+              <div class="metric-badge">
+                <span class="val">5+</span>
+                <span class="lbl">KPI Views</span>
+              </div>
+            </div>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>Tableau</span>
+              <span>Pandas</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <button class="btn btn-outline btn-sm open-modal" data-modal="modal-dashboard">
+              <span>Read Case Study</span>
+              <i data-lucide="external-link"></i>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Project 2: AI-enhanced Collaborative Coding -->
+        <div class="project-card reveal-fade-up track-project" data-project="collab_coding">
+          <div class="project-card-header">
+            <div class="project-category">Full Stack & AI Integration</div>
+            <h3 class="project-title">AI Collaborative Coding Platform</h3>
+          </div>
+          <div class="project-card-body">
+            <p>Real-time collaborative editing platform featuring integrated smart AI assistants that autocomplete blocks, write docstrings, and run checks.</p>
+            <div class="project-metrics">
+              <div class="metric-badge">
+                <span class="val">&lt; 150ms</span>
+                <span class="lbl">Latency</span>
+              </div>
+              <div class="metric-badge">
+                <span class="val">3+</span>
+                <span class="lbl">Smart Modules</span>
+              </div>
+            </div>
+            <div class="project-tech">
+              <span>Node.js</span>
+              <span>Socket.io</span>
+              <span>Python</span>
+              <span>LLM APIs</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <button class="btn btn-outline btn-sm open-modal" data-modal="modal-coding">
+              <span>Read Case Study</span>
+              <i data-lucide="external-link"></i>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Project 3: AI Resume Relevance Check -->
+        <div class="project-card reveal-fade-up track-project" data-project="resume_checker">
+          <div class="project-card-header">
+            <div class="project-category">Natural Language Processing</div>
+            <h3 class="project-title">AI Resume Relevance Check System</h3>
+          </div>
+          <div class="project-card-body">
+            <p>An ATS matching system using cosine similarity and NLP embeddings to measure how closely a resume matches recruiter job postings.</p>
+            <div class="project-metrics">
+              <div class="metric-badge">
+                <span class="val">94%</span>
+                <span class="lbl">Accuracy</span>
+              </div>
+              <div class="metric-badge">
+                <span class="val">Instant</span>
+                <span class="lbl">Parsing</span>
+              </div>
+            </div>
+            <div class="project-tech">
+              <span>NLP</span>
+              <span>Python</span>
+              <span>TF-IDF</span>
+              <span>Scikit-learn</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <button class="btn btn-outline btn-sm open-modal" data-modal="modal-resume">
+              <span>Read Case Study</span>
+              <i data-lucide="external-link"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Admin Button inside Project Section -->
+      <div class="text-center mt-5 reveal-fade-up">
+        <button id="projects-admin-btn" class="btn btn-outline btn-icon-left">
+          <i data-lucide="lock"></i>
+          <span>Portal Access (Upload Resume & Details)</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="certifications section" id="certifications">
+    <div class="container">
+      <h2 class="section-title text-center reveal-fade-up">Certifications & Milestones</h2>
+      <p class="section-subtitle text-center reveal-fade-up">Validated skills from accredited institutions</p>
+      
+      <div class="certifications-grid reveal-fade-up">
+        <!-- Cert 1 -->
+        <div class="cert-card track-cert" data-cert="google_analytics">
+          <div class="cert-badge"><i data-lucide="award"></i></div>
+          <div class="cert-info">
+            <h3 class="cert-title">Google Analytics Certification</h3>
+            <p class="cert-issuer">Google</p>
+          </div>
+        </div>
+        <!-- Cert 2 -->
+        <div class="cert-card track-cert" data-cert="excel">
+          <div class="cert-badge"><i data-lucide="award"></i></div>
+          <div class="cert-info">
+            <h3 class="cert-title">Free Excel Certification Course</h3>
+            <p class="cert-issuer">Intellipaat</p>
+          </div>
+        </div>
+        <!-- Cert 3 -->
+        <div class="cert-card track-cert" data-cert="sql">
+          <div class="cert-badge"><i data-lucide="award"></i></div>
+          <div class="cert-info">
+            <h3 class="cert-title">SQL Certification</h3>
+            <p class="cert-issuer">Simplilearn</p>
+          </div>
+        </div>
+        <!-- Cert 4 -->
+        <div class="cert-card track-cert" data-cert="python_datascience">
+          <div class="cert-badge"><i data-lucide="award"></i></div>
+          <div class="cert-info">
+            <h3 class="cert-title">Python for Data Science</h3>
+            <p class="cert-issuer">NPTEL / Internshala</p>
+          </div>
+        </div>
+        <!-- Cert 5 -->
+        <div class="cert-card track-cert" data-cert="oracle_ai">
+          <div class="cert-badge"><i data-lucide="award"></i></div>
+          <div class="cert-info">
+            <h3 class="cert-title">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h3>
+            <p class="cert-issuer">Oracle</p>
+          </div>
+        </div>
+        <!-- Cert 6 -->
+        <div class="cert-card track-cert" data-cert="ibm_personality">
+          <div class="cert-badge"><i data-lucide="award"></i></div>
+          <div class="cert-info">
+            <h3 class="cert-title">IBM SkillsBuild Customer Engagement: Communication & Personality Dynamics</h3>
+            <p class="cert-issuer">IBM SkillsBuild</p>
+          </div>
+        </div>
+        <!-- Cert 7 -->
+        <div class="cert-card track-cert" data-cert="ibm_problem">
+          <div class="cert-badge"><i data-lucide="award"></i></div>
+          <div class="cert-info">
+            <h3 class="cert-title">IBM SkillsBuild Customer Engagement: Problem Solving & Process Controls</h3>
+            <p class="cert-issuer">IBM SkillsBuild</p>
+          </div>
+        </div>
+        <!-- Cert 8 -->
+        <div class="cert-card track-cert" data-cert="accenture_sim">
+          <div class="cert-badge"><i data-lucide="award"></i></div>
+          <div class="cert-info">
+            <h3 class="cert-title">Accenture Developer and Technology Job Simulation</h3>
+            <p class="cert-issuer">Forage / Accenture</p>
+          </div>
+        </div>
+        <!-- Cert 9 -->
+        <div class="cert-card track-cert" data-cert="innomatics">
+          <div class="cert-badge"><i data-lucide="award"></i></div>
+          <div class="cert-info">
+            <h3 class="cert-title">Innomatics Research Lab Hackathon</h3>
+            <p class="cert-issuer">Participation Certificate</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <h2 class="section-title text-center reveal-fade-up">Get In Touch</h2>
+      <p class="section-subtitle text-center reveal-fade-up">Let's discuss data projects or potential opportunities</p>
+      
+      <div class="contact-grid">
+        <div class="contact-info-column reveal-fade-up">
+          <div class="contact-card-info">
+            <h3>Let's Connect</h3>
+            <p>I am actively seeking data analyst positions where I can apply my quantitative analysis skills and build scalable analytical models.</p>
+            
+            <div class="info-list">
+              <div class="info-list-item">
+                <i data-lucide="mail" class="teal"></i>
+                <a href="mailto:suprithasupritha869@gmail.com" id="contact-info-email-a">suprithasupritha869@gmail.com</a>
+              </div>
+              <div class="info-list-item">
+                <i data-lucide="phone" class="violet"></i>
+                <a href="tel:+918660520114" id="contact-info-phone-a">+91 8660520114</a>
+              </div>
+              <div class="info-list-item">
+                <i data-lucide="map-pin" class="amber"></i>
+                <span id="contact-info-loc-span">Devanahalli, India</span>
+              </div>
+            </div>
+            
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/supritha-k-a-05a9122b9" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a href="https://github.com/Supritha485" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                <i data-lucide="github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-column reveal-fade-up">
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name">Name</label>
+                <input type="text" id="form-name" required placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <label for="form-email">Email</label>
+                <input type="email" id="form-email" required placeholder="your.email@example.com">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="form-subject">Subject</label>
+              <input type="text" id="form-subject" required placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" rows="5" required placeholder="Hello Supritha, I'd like to discuss a project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span>
+              <i data-lucide="send"></i>
+            </button>
+            <div id="form-feedback" class="form-feedback hidden"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Supritha K A. All Rights Reserved. Crafted with Vanilla CSS & JS.</p>
+      <div class="footer-links">
+        <a href="#about">About</a> | 
+        <a href="#projects">Projects</a> | 
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Recruiter Insights Dashboard Toggle -->
+  <button id="metrics-panel-toggle" class="metrics-panel-toggle" aria-label="Open Recruiter Metrics Dashboard">
+    <i data-lucide="bar-chart-3"></i>
+    <span class="toggle-pulse"></span>
+    <span class="btn-text">Recruiter Metrics</span>
+  </button>
+
+  <!-- Recruiter Insights Panel -->
+  <div id="metrics-panel" class="metrics-panel">
+    <div class="metrics-header">
+      <div class="title-with-icon">
+        <i data-lucide="activity" class="activity-pulse"></i>
+        <h3>Recruiter Engagement Dashboard</h3>
+      </div>
+      <button id="metrics-close" class="metrics-close-btn" aria-label="Close Metrics Dashboard">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <div class="metrics-body">
+      <p class="metrics-intro">As a Data Analyst, I track engagement events on this page in real-time. Click items on the page to see this chart update dynamically!</p>
+      
+      <div class="metrics-stats-row">
+        <div class="metric-stat-box">
+          <span class="stat-val" id="stat-cta-clicks">0</span>
+          <span class="stat-lbl">CTA Clicks</span>
+        </div>
+        <div class="metric-stat-box">
+          <span class="stat-val" id="stat-project-views">0</span>
+          <span class="stat-lbl">Project Details</span>
+        </div>
+        <div class="metric-stat-box">
+          <span class="stat-val" id="stat-certs-clicked">0</span>
+          <span class="stat-lbl">Certs Viewed</span>
+        </div>
+      </div>
+      
+      <div class="metrics-chart-container">
+        <h4>User Interaction Frequency</h4>
+        <div class="svg-chart-wrapper">
+          <svg id="metrics-svg-chart" viewBox="0 0 300 120" width="100%" height="100%">
+            <!-- Chart lines and bars will be dynamically rendered here via JS -->
+          </svg>
+        </div>
+      </div>
+
+      <div class="metrics-log-container">
+        <h4>Live Interaction Event Log</h4>
+        <div class="metrics-log-list" id="metrics-log-list">
+          <div class="log-entry system-log">Dashboard initialized. Waiting for events...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Case Study Modals -->
+  <!-- Project 1 Modal: Data Storytelling Dashboard -->
+  <div class="modal" id="modal-dashboard" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-wrapper">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="modal-tag">Featured Project</span>
+            <h2>Data Storytelling Dashboard</h2>
+          </div>
+          <button class="modal-close" aria-label="Close Case Study">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="case-study-section">
+            <h3><i data-lucide="alert-circle"></i> The Problem</h3>
+            <p>Recruiters and decision-makers often struggle to extract actionable insights from static Excel sheets or massive rows of data. The primary issue was to map clean patterns dynamically, enabling fast decision-making with responsive visual filtering and metrics visualization.</p>
+          </div>
+          <div class="case-study-section">
+            <h3><i data-lucide="cpu"></i> The Approach</h3>
+            <p>I designed a clean relational database schema, optimized index structures for fast ad-hoc queries, and developed interactive Tableau widgets. Using python libraries (Pandas), data cleaning pipelines were implemented to filter outliers and standardize datatypes before feeding the dashboard model.</p>
+          </div>
+          <div class="case-study-section">
+            <h3><i data-lucide="layers"></i> Tech Stack</h3>
+            <div class="tech-badges">
+              <span>Python (Pandas, NumPy)</span>
+              <span>SQL</span>
+              <span>Tableau</span>
+              <span>CSS Grid</span>
+              <span>Matplotlib</span>
+            </div>
+          </div>
+          <div class="case-study-section">
+            <h3><i data-lucide="trending-up"></i> Key Metrics & Impact</h3>
+            <ul>
+              <li><strong>98%</strong> increase in query performance by optimizing subqueries and indexing structures.</li>
+              <li><strong>5+ KPI</strong> metrics displayed dynamically (revenue, conversions, active users, retention, churn rates).</li>
+              <li>Standardized <strong>10M+</strong> rows of unstructured data into structured schemas.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/Supritha485" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i data-lucide="github"></i>
+            <span>View Source Code</span>
+          </a>
+          <button class="btn btn-outline modal-close">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 2 Modal: AI Collaborative Coding Platform -->
+  <div class="modal" id="modal-coding" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-wrapper">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="modal-tag">Featured Project</span>
+            <h2>AI Collaborative Coding Platform</h2>
+          </div>
+          <button class="modal-close" aria-label="Close Case Study">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="case-study-section">
+            <h3><i data-lucide="alert-circle"></i> The Problem</h3>
+            <p>Developer environments require synchronous editing capability without merging conflicts. Traditional tools lack built-in semantic context to assist developers locally with docstring generation, syntax checks, and autocomplete recommendations in real-time.</p>
+          </div>
+          <div class="case-study-section">
+            <h3><i data-lucide="cpu"></i> The Approach</h3>
+            <p>Constructed a secure full stack workspace utilizing WebSockets to sync cursor locations and document diffs immediately. Integrated LLM inference pipelines that receive file buffers, run prompt-tuned context assembly, and return completions asynchronously to prevent editing lags.</p>
+          </div>
+          <div class="case-study-section">
+            <h3><i data-lucide="layers"></i> Tech Stack</h3>
+            <div class="tech-badges">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>Socket.io</span>
+              <span>Python backend</span>
+              <span>API Gateway</span>
+            </div>
+          </div>
+          <div class="case-study-section">
+            <h3><i data-lucide="trending-up"></i> Key Metrics & Impact</h3>
+            <ul>
+              <li>Asynchronous latency clocked under <strong>150ms</strong> for suggestions.</li>
+              <li>Implemented <strong>3 smart modules</strong>: Auto-Docstrings, Syntax Checker, and Code Explainer.</li>
+              <li>Handled <strong>50+</strong> concurrent active socket channels with automatic cleanup mechanisms.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/Supritha485" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i data-lucide="github"></i>
+            <span>View Source Code</span>
+          </a>
+          <button class="btn btn-outline modal-close">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 3 Modal: AI Resume Relevance Check -->
+  <div class="modal" id="modal-resume" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-wrapper">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="modal-tag">Featured Project</span>
+            <h2>AI Resume Relevance Check System</h2>
+          </div>
+          <button class="modal-close" aria-label="Close Case Study">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="case-study-section">
+            <h3><i data-lucide="alert-circle"></i> The Problem</h3>
+            <p>Hiring pipelines are flooded with resumes that are hard to filter manually. A mechanism was required to quickly cross-examine resumes against detailed job descriptions to rank applicant suitability programmatically.</p>
+          </div>
+          <div class="case-study-section">
+            <h3><i data-lucide="cpu"></i> The Approach</h3>
+            <p>I developed a text-processing engine in Python using natural language processing (NLP). The model parses PDF text, runs TF-IDF vectorization and cosine similarity calculations, and scores matching attributes while highlighting missing core keyphrases.</p>
+          </div>
+          <div class="case-study-section">
+            <h3><i data-lucide="layers"></i> Tech Stack</h3>
+            <div class="tech-badges">
+              <span>Python</span>
+              <span>Scikit-learn</span>
+              <span>NLTK</span>
+              <span>PyPDF2</span>
+              <span>HTML5 UI</span>
+            </div>
+          </div>
+          <div class="case-study-section">
+            <h3><i data-lucide="trending-up"></i> Key Metrics & Impact</h3>
+            <ul>
+              <li><strong>94% matching accuracy</strong> measured against test recruitment benchmarks.</li>
+              <li>Reduced parsing and sorting workflows to <strong>under 1 second</strong> per document.</li>
+              <li>Generated visual relevance matrices displaying keyphrase overlaps.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/Supritha485" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i data-lucide="github"></i>
+            <span>View Source Code</span>
+          </a>
+          <button class="btn btn-outline modal-close">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin/Uploader Modal -->
+  <div class="modal" id="modal-admin" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-wrapper">
+      <div class="modal-content modal-sm">
+        <div class="modal-header">
+          <h2>Admin Console</h2>
+          <button class="modal-close" id="admin-modal-close" aria-label="Close Admin Console">&times;</button>
+        </div>
+        <div class="modal-body">
+          <!-- Passcode Screen -->
+          <div id="admin-auth-screen" class="admin-screen">
+            <p>Enter your secret passcode to edit documents & upload data.</p>
+            <div class="form-group">
+              <label for="admin-passcode">Passcode</label>
+              <input type="password" id="admin-passcode" placeholder="Enter Passcode">
+            </div>
+            <button id="btn-admin-auth" class="btn btn-primary btn-full">Authenticate</button>
+            <div id="admin-auth-error" class="error-text hidden">Incorrect passcode. Try again.</div>
+          </div>
+          
+          <!-- Upload Screen (Initially hidden) -->
+          <div id="admin-upload-screen" class="admin-screen hidden">
+            <div class="admin-header-status">
+              <span class="badge glow-teal">Authenticated</span>
+              <p>Welcome back, Supritha.</p>
+            </div>
+            
+            <div class="admin-section-divider">Upload Resume</div>
+            <div class="form-group">
+              <label for="admin-resume-file" class="file-upload-label">
+                <i data-lucide="upload-cloud"></i>
+                <span id="file-upload-name">Choose PDF Resume</span>
+                <input type="file" id="admin-resume-file" accept=".pdf" class="hidden-input">
+              </label>
+              <p class="field-hint">Uploading a new PDF immediately updates the Hero 'Download Resume' action link.</p>
+            </div>
+            
+            <div class="admin-section-divider">Upload Profile Image</div>
+            <div class="form-group">
+              <label for="admin-profile-image-file" class="file-upload-label">
+                <i data-lucide="image"></i>
+                <span id="image-upload-name">Choose Profile Image</span>
+                <input type="file" id="admin-profile-image-file" accept="image/*" class="hidden-input">
+              </label>
+              <p class="field-hint">Uploading an image immediately updates the About Me and Hero profile photos.</p>
+            </div>
+            
+            <div class="admin-section-divider">Update Profile Information</div>
+            <div class="form-group">
+              <label for="admin-profile-name">Name</label>
+              <input type="text" id="admin-profile-name" value="Supritha K A">
+            </div>
+            <div class="form-group">
+              <label for="admin-profile-title">Title / Role</label>
+              <input type="text" id="admin-profile-title" value="Data Analyst | Python, SQL, Excel & Data Visualization">
+            </div>
+            <div class="form-group">
+              <label for="admin-profile-email">Email</label>
+              <input type="email" id="admin-profile-email" value="suprithasupritha869@gmail.com">
+            </div>
+            <div class="form-group">
+              <label for="admin-profile-phone">Phone</label>
+              <input type="text" id="admin-profile-phone" value="+91 8660520114">
+            </div>
+            <div class="form-group">
+              <label for="admin-profile-loc">Location</label>
+              <input type="text" id="admin-profile-loc" value="Devanahalli, India">
+            </div>
+            
+            <button id="btn-admin-save" class="btn btn-primary btn-full">Save Changes</button>
+            <div id="admin-save-success" class="success-text hidden">Changes saved successfully!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Scripts -->
+  <script src="index.js"></script>
+</body>
+</html>
